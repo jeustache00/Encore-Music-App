@@ -1,0 +1,148 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  background-image: url(http://files.greatermedia.com/uploads/sites/31/2017/06/GettyImages-682161090-1-1400x933.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1{
+  color: white;
+  font-size: 3.5em;
+  margin-left: 5%;
+}
+h2, h3, h1, h6, h5{
+  color: white;
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+}
+label{
+  color: white;
+}
+.setlist{
+  min-height:350px;
+  width: 85%;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 3% auto;
+  border: 2px solid yellow;
+  padding: 20px 10% 20px 10%;
+  clear: both;
+}
+.setlist ul li, #fanMessages li{
+  padding: 3px 0 3px 0;
+  border-bottom: 2px solid black;
+  color: white;
+  font-size: 1.6em;
+}
+.setlist h2{
+  text-align: center;
+}
+.tagline{
+  margin: -2% 0 0 8.5%;
+}
+.tagline2{
+  margin: .5% 0 0 9.5%;
+  font-size: 1em;
+}
+.deadline{
+  font-size: 2em;
+  margin-left: 40%;
+}
+.fa {
+cursor: pointer;
+padding-left: 3px;
+}
+.panel-heading{
+  color: white;
+  font-size: 1.5em;
+  margin-left: 30%;
+}
+.panel-group{
+  /*height:200px;*/
+}
+.panel-body{
+  min-height:200px;
+  border: 2px solid blue;
+}
+#artistinfo{
+  margin-left: 77%;
+  margin-top: -8%;
+  font-size: 1.2em;
+}
+
+/*Back end css*/
+.backend{
+  clear: both;
+  background: black;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+			<meta name content="">
+
+		<title>ENCORE</title>
+
+		<!-- Firebase stuff -->
+		<!-- Firebase CDN -->
+	  <script src='https://cdn.firebase.com/js/client/2.4.1/firebase.js'></script>
+	  <!-- Firebase -->
+	  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCSLGEhvOG0js_nhWyL1mzu9fuLw0u21-g",
+	    authDomain: "encore-610ad.firebaseapp.com",
+	    databaseURL: "https://encore-610ad.firebaseio.com",
+	    projectId: "encore-610ad",
+	    storageBucket: "encore-610ad.appspot.com",
+	    messagingSenderId: "913642819590"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+		<!-- external CS  link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	</head>
+	<body>
+
+		<h1>ENCORE</h1>
+		<h3 class="tagline">Do you want more...?</h3>
+		<h2 class="tagline2">#1 Crowd Sourcing Playlist</h2>
+
+		<!-- Solange/Artist info -->
+		<ul id="artistinfo">
+			<li><h2>Artist: Solange</h2></li>
+			<li><h2>City: Boston, MA</h2></li>
+			<li><h2>Venue: House of Blues</h2></li>
+			<li><h2>Date: 12/09/2017 </h2></li>
+			<li><h3>Genre: R&amp;B/Soul</h3></li>
+		</ul>
+
+		<section class="setlist">
+			<h2>Set Playlist</h2>
+			<ul id="setlist">
+
+			</ul>
+		</section>
+
+		<div class="votedate">
+			<h3 class="deadline">Vote by 12/02/2017</h3>
+		</div>
+
+		<div class="container">
+	    <div class="panel-group">
+	      <div class="panel panel-danger">
+	        <div class="panel-heading">Don't see a song you like? Post YOUR favorite song and Solange might play it live!</div>
+	        <div class="panel-body clearfix">
+	          <form action="" id="message-form">
+	            <div class="form-group">
+	              <label>Message:</label>
+								<textarea id="message" type="text" class="form-control"></textarea>
+
+	            </div>
+	            <button class="btn btn-default">Post to board</button>
+	          </form>
+
+						<div class="">
+							<ul id="fanMessages">
+
+							</ul>
+						</div>
+
+	        </div>
+	      </div>
+	    </div>
+
+		<!-- <div class="panel-group clearfix">
+			<div class="panel panel-default">
+				<div class="panel-heading">Message Board</div>
+				<div class="panel-body">
+					<ul class="message-board">
+					</ul>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+ 	<!-- Back end interface-->
+	<div class="backend clearfix">
+	 	<h2>backend</h2>
+	 	<button id="deleteLame"type="button" name="button">Delete Lame Tracks</button>
+
+		<form action="" id="setList-form">
+			<h3>Add new track</h3>
+			<textarea id="setListElement" type="text" class="form-control"></textarea>
+			<button type="submit" name="button">Submit</button>
+			<h3>Set date for end of voting</h3>
+	  	<input type="date" class="date" name="" value="">
+	  	<input type="time" class="time" name="" value="">
+	  	<button id="getDateTime" type="button" name="button">Set Time and Date</button>
+		</form>
+
+	</div>
+
+	<!-- JS Link -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
